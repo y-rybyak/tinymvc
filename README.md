@@ -1,2 +1,0 @@
-# tinymvc
-First MVC project
