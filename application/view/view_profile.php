@@ -22,7 +22,8 @@ session_start();
     <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
-            <?=$_SESSION["data"]["varFirstName"] . " " . $_SESSION["data"]["varSurname"]?>
+            <?=$_SESSION["data"]["varFirstName"] . " " . $_SESSION["data"]["varSurname"] . "<br />"?>
+            <?=$_SESSION["data"]["varEmail"] . "<br />"?>
         </div>
         <div class="col-md-4"></div>
     </div>

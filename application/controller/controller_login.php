@@ -9,10 +9,12 @@ if (!empty($_POST["email"]) AND !empty($_POST["password"])) {
         exit;
     }
     else {
+        $_SESSION["error"] = "The email or password you entered is incorrect.";
         header('Location: ../view/view_login.php', true, 303);
         exit;
     }
 } else {
+    $_SESSION["error"] = "Please input email and password.";
     header('Location: ../view/view_login.php', true, 303);
     exit;
 }

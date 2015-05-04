@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -19,6 +22,9 @@
     <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
+            <p class="text-danger">
+            <?=isset($_SESSION["error"])?$_SESSION["error"]:"";?>
+            </p>
             <form name="loginForm" method="POST" action="../controller/controller_login.php">
 
                 <div class="form-group">
