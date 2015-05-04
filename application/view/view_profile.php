@@ -15,7 +15,7 @@ session_start();
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12" align="center">
-            <h1>Profile</h1>
+            <h1>Profile <small><a href="/logout.php">logout</a></small></h1>
             <hr>
         </div>
     </div>
