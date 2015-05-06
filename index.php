@@ -1,10 +1,11 @@
 <?php
 
-include 'models/model_login.php';
-include 'controllers/controller_login.php';
+define('PROJECT_ROOT', __DIR__);
+include PROJECT_ROOT . '/models/User.php';
+include PROJECT_ROOT . '/controllers/Login.php';
+$controller = new Controller();
 
 if (!empty($_POST["email"]) AND !empty($_POST["password"])) {
-    $controller = new Controller();
     $email = $controller->login($_POST["email"], $_POST["password"]);
     if (!empty($email)) {
         include 'views/profile.php';
@@ -15,6 +16,8 @@ if (!empty($_POST["email"]) AND !empty($_POST["password"])) {
 } else if ((empty($_POST["email"]) XOR empty($_POST["password"]))) {
     $error = "Please fill both fields.";
     include 'views/login.php';
+} else if (!empty($_REQUEST["logout"])) {
+    $controller->logout();
 } else {
     include 'views/login.php';
 }

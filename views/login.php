@@ -13,7 +13,8 @@
 <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-4">
-        <p class="text-danger"><?=isset($error)?$error:""?></p>
+        <p class="text-danger"><?= isset($error) ? $error : "" ?></p>
+
         <form name="login" method="POST" action="/index.php">
 
             <div class="form-group">

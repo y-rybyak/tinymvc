@@ -1,3 +1,7 @@
+<?php
+/* @var $email string */
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -11,7 +15,9 @@
 
 <body>
 <div class="row" align="center">
-    <h1>Profile <small><a href="/logout.php">logout</a></small></h1>
+    <h1>Profile
+        <small><a href="/index.php?action=logout">logout</a></small>
+    </h1>
 </div>
 <div class="row">
     <div class="col-md-4"></div>
