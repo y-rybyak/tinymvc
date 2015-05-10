@@ -30,7 +30,7 @@
                        name="password">
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-default pull-left" id="submitLogin">Sign up
+                <button type="submit" class="btn btn-default pull-left" id="submitLogin">Sign in
                 </button>
             </div>
         </form>

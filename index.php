@@ -1,5 +1,4 @@
 <?php
-print_r($_GET);
 define('PROJECT_ROOT', __DIR__);
 include PROJECT_ROOT . '/models/User.php';
 include PROJECT_ROOT . '/controllers/Login.php';
@@ -17,12 +16,6 @@ if (!empty($_POST["email"]) AND !empty($_POST["password"])) {
     $error = "Please fill both fields.";
     include 'views/login.php';
 }
-/*
-else if (!empty($_GET["logout"])) {
-    print "lol";
-    $controller->logout();
-}
-*/
 else {
     include 'views/login.php';
 }
