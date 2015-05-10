@@ -11,6 +11,7 @@ class Controller
         }
     }
 
+    /*
     public function logout()
     {
         session_start();
@@ -18,4 +19,5 @@ class Controller
         header('Location: /index.php', true, 303);
         exit;
     }
+    */
 }
