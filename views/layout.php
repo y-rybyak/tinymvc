@@ -11,8 +11,7 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <ul class="nav navbar-nav">
-            <a class="navbar-brand">Yaroslav Rybyak</a>
-            <li><a href="/">Home</a></li>
+            <a href="/" class="navbar-brand">Tiny MVC</a>
             <li><a href="?controller=posts&amp;action=index">Posts</a></li>
             <li><a href="?controller=authors&amp;action=index">Authors</a></li>
         </ul>
