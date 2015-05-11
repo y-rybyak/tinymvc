@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/sticky-footer.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -15,6 +14,7 @@
             <a class="navbar-brand">Yaroslav Rybyak</a>
             <li><a href="/">Home</a></li>
             <li><a href="?controller=posts&amp;action=index">Posts</a></li>
+            <li><a href="?controller=authors&amp;action=index">Authors</a></li>
         </ul>
     </div>
 </nav>
