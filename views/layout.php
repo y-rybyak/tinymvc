@@ -27,7 +27,7 @@
 </div>
 <footer class="footer">
     <div class="container">
-        <p class="text-muted"><a href="https://github.com/y-rybyak" target="_blank">Yaroslav Rybyak</a> <?= date('Y') ?></p>
+        <p align="center" class="text-muted"><a href="https://github.com/y-rybyak" target="_blank">Yaroslav Rybyak</a> <?= date('Y') ?></p>
     </div>
 </footer>
 </body>
