@@ -1,1 +1,1 @@
-<p>Home Page</p>
+<p><h2>Welcome to main page.</h2></p>
