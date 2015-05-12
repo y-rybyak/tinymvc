@@ -5,7 +5,7 @@ class AuthorsController
     public function index()
     {
         // we store all the posts in a variable
-        $posts = Post::all();
+        $posts = Authors::all();
         require_once('views/authors/index.php');
     }
 
@@ -17,7 +17,7 @@ class AuthorsController
             return call('pages', 'error');
 
         // we use the given id to get the right post
-        $post = Post::find($_GET['id']);
+        $post = Authors::find($_GET['id']);
         require_once('views/posts/show.php');
     }
 }

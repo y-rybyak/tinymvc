@@ -3,9 +3,9 @@
 /**
  * Class Post
  */
-class Post extends BaseModel
+class Authors extends BaseModel
 {
-    public static $tableName = 'posts';
+    public static $tableName = 'authors';
     public static $primaryKey = 'id';
 
     public $id;

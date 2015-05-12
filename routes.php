@@ -9,11 +9,9 @@ function call($controller, $action)
             break;
         case 'posts':
             // we need the model to query the database later in the controller
-            require_once('models/post.php');
             $controller = new PostsController();
             break;
         case 'authors':
-            require_once('models/post.php');
             $controller = new AuthorsController();
             break;
     }
@@ -22,7 +20,7 @@ function call($controller, $action)
 }
 
 // we're adding an entry for the new controller and its actions
-$controllers = array('pages' => ['home', 'error'],
+$controllers = array('pages' => ['home', 'error', 'login'],
     'posts' => ['index', 'show'],
     'authors' => ['index', 'show']);
 
