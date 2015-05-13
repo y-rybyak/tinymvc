@@ -6,7 +6,6 @@ class User
 
     public function getlogin()
     {
-        // here goes some hardcoded values to simulate the database
         if (isset($_REQUEST['email']) && isset($_REQUEST['password'])) {
             $email = $_REQUEST['email'];
             $password = $_REQUEST['password'];
