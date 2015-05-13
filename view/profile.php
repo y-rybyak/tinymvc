@@ -8,13 +8,25 @@
     <title><?= $result ?></title>
 </head>
 <body>
-<div class="row">
-    <div class="col-md-4"></div>
-    <div class="col-md-4">
-        <?= $result ?>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="">TinyMVC</a>
+        </div>
     </div>
-    <div class="col-md-4"></div>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <?= $result ?>
+        </div>
+    </div>
 </div>
-</div>
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">Yaroslav Rybyak <?= date('Y') ?></p>
+    </div>
+</footer>
 </body>
 </html>
