@@ -12,7 +12,6 @@ class Controller
 
     public function invoke()
     {
-        // it call the getlogin() function of model class and store the return value of this function into the result variable.
         $result = $this->user->getlogin();
         if (!empty($_REQUEST['email'])) {
             if ($result == $_REQUEST['email']) {
