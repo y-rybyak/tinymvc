@@ -19,7 +19,6 @@
     <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
-            <p>Don't have an account yet? Please <a href="/index.php?action=registration">make</a> one.</p>
             <div class="centered-text">
                 <?= (!empty($result)) ? '<div class="alert alert-danger" role="alert">' . $result . '</div>' : "" ?>
             </div>
@@ -33,13 +32,19 @@
                 </div>
                 <div class="form-group">
 
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" placeholder="Enter your password" id="password"
-                           name="password">
+                    <label for="password1">Choose password</label>
+                    <input type="password" class="form-control" placeholder="Enter your password" id="password1"
+                           name="password1">
+                </div>
+                <div class="form-group">
+
+                    <label for="password2">Repeat password</label>
+                    <input type="password" class="form-control" placeholder="Repeat your password" id="password2"
+                           name="password2">
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-default pull-left" id="submitLogin"
-                            name="submitLogin">Sign in
+                            name="submitLogin">Sign up
                     </button>
                 </div>
             </form>

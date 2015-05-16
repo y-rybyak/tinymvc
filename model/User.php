@@ -10,6 +10,6 @@ class User
         $sth = $dbh->prepare("SELECT varEmail, intId, varFirstName, varSurname, isTeacher, varPasswordHash FROM user WHERE varEmail = :email AND varPasswordHash = :passwordHash");
         $sth->execute([':email' => $email, ':passwordHash' => md5($password)]);
         $this->data = $sth->fetch(PDO::FETCH_ASSOC);
-        return $this->data["varEmail"];
+        return $this->data['varEmail'];
     }
 }

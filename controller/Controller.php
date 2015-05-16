@@ -17,9 +17,16 @@ class Controller
             if ($result == $_REQUEST['email']) {
                 include MAIN_ROOT . '/view/profile.php';
             } else {
+                $result = "Login or password is incorrect.";
                 include MAIN_ROOT . '/view/login.php';
             }
-        } else {
+        } else if (!empty($_REQUEST['email']) XOR !empty($_REQUEST['password'])) {
+            $result = "Fields can not be empty.";
+            include MAIN_ROOT . '/view/login.php';
+        } else if (!empty($_GET['action'])) {
+            include MAIN_ROOT . '/view/registration.php';
+        }
+        else {
             include MAIN_ROOT . '/view/login.php';
         }
     }
