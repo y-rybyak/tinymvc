@@ -20,7 +20,7 @@
         <div class="col-md-4"></div>
         <div class="col-md-4">
             <div class="centered-text">
-                <?= ($result != "") ? '<div class="alert alert-danger" role="alert">' . $result . '</div>' : "" ?>
+                <?= (!empty($result)) ? '<div class="alert alert-danger" role="alert">' . $result . '</div>' : "" ?>
             </div>
             <form name="loginForm" method="POST" action="index.php">
 
