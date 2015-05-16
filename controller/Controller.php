@@ -12,16 +12,14 @@ class Controller
 
     public function invoke()
     {
-        $result = $this->user->getlogin();
-        if (!empty($_REQUEST['email'])) {
+        if (!empty($_REQUEST['email']) AND !empty($_REQUEST['password'])) {
+            $result = $this->user->getlogin($_REQUEST['email'], $_REQUEST['password']);
             if ($result == $_REQUEST['email']) {
                 include MAIN_ROOT . '/view/profile.php';
-            }
-            else {
+            } else {
                 include MAIN_ROOT . '/view/login.php';
             }
-        }
-        else {
+        } else {
             include MAIN_ROOT . '/view/login.php';
         }
     }
